@@ -24,9 +24,16 @@ const appRoutes: Routes = [
     path: 'msg',
     component: MsgComponent,
     children: [
-      { path: '', redirectTo: '/msgCenter', pathMatch: 'full' },
-      { path: 'msgCenter', component: 'MsgCenterComponent' },
-      { path: 'msgAttendance', component: 'AttendanceComponent' }
+      { path: '', 
+        redirectTo: 'msgCenter', 
+        pathMatch: 'full' 
+      },
+      { path: 'msgCenter', 
+        component: MsgCenterComponent 
+      },
+      { path: 'msgAttendance', 
+        component: AttendanceComponent 
+      }
     ]
   },
   { path: 'message', component: MessagesComponent }
